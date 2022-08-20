@@ -1,0 +1,24 @@
+services:
+  keycloak:
+    container_name: keycloak
+    image: quay.io/keycloak/keycloak:18.0.2-legacy
+    ports:
+      - 18080:8080
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: keycloak
+      KEYCLOAK_IMPORT: /opt/jboss/keycloak/imports/realm-export.json
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ../keycloak-sms-authenticator/target/keycloak-sms-authenticator.jar:/opt/jboss/keycloak/standalone/deployments/sms-auth.jar
+      - ./realm-export.json:/opt/jboss/keycloak/imports/realm-export.json
+    networks:
+      - allgäu
+
+networks:
+  allgäu:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/16
