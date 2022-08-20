@@ -45,6 +45,19 @@
   "quickLoginCheckMilliSeconds": 1000,
   "maxDeltaTimeSeconds": 43200,
   "failureFactor": 30,
+  "users": [
+    {
+      "username": "ikuba",
+      "enabled": true,
+      "email": "",
+      "firstName": "Ingo",
+      "lastName": "Kuba",
+      "credentials": [],
+      "attributes": {
+        "mobile_number": ["+4912345678901"]
+      }
+    }
+  ],
   "defaultRole": {
     "id": "049567ef-344c-4a1d-8cf0-58f08c293bd4",
     "name": "default-roles-wolpertingers",
