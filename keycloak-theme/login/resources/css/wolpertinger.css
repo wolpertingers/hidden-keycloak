@@ -47,3 +47,11 @@ h1 {
 #kc-page-title {
   display: none;
 }
+
+.login-pf-header {
+  display: none !important;
+}
+
+.pf-c-alert {
+  display: none !important;
+}
