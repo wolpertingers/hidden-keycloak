@@ -3,9 +3,9 @@
 a {
   border: 10px solid;
   border-radius: 64px;
-  color: #FFFFFF;
-  background-color: #5A4DD6;
-  border-color: #5A4DD6;
+  color: #ffffff;
+  background-color: #5a4dd6;
+  border-color: #5a4dd6;
   font-size: 18px;
   font-weight: 700;
   border-left-width: 20px;
@@ -14,7 +14,7 @@ a {
 }
 
 .pf-c-button.pf-m-primary {
-  background-color: #5A4DD6;
+  background-color: #5a4dd6;
   border-radius: 64px;
   padding-top: 12px;
   padding-bottom: 8px;
@@ -23,11 +23,11 @@ a {
 }
 
 .login-pf body {
-    font-family: Roboto, 'sans-serif';
+  font-family: Roboto, "sans-serif";
 }
 
 .card-pf {
-  border-color: #5A4DD6;
+  border-color: #5a4dd6;
 }
 
 #kc-header-wrapper {
@@ -35,11 +35,15 @@ a {
 }
 
 h1 {
-  color: #0E0E23;
+  color: #0e0e23;
   font-size: 37px;
   font-weight: 900;
 }
 
 .instruction {
   margin-bottom: 30px;
+}
+
+#kc-page-title {
+  display: none;
 }
