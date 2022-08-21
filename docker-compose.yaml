@@ -11,6 +11,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ../keycloak-sms-authenticator/target/keycloak-sms-authenticator.jar:/opt/jboss/keycloak/standalone/deployments/sms-auth.jar
+      - ./keycloak-theme:/opt/jboss/keycloak/themes/wolpertinger
       - ./realm-export.json:/opt/jboss/keycloak/imports/realm-export.json
     networks:
       - allgäu
