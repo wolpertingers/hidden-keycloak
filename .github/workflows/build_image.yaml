@@ -2,6 +2,8 @@ name: Build custom Keycloak image
 on:
   release:
     types: [created]
+env:
+  REGISTRY: ghcr.io
 jobs:
   publish:
     runs-on: ubuntu-latest
