@@ -30,7 +30,6 @@ jobs:
         uses: docker/metadata-action@v5.5.0
         with:
           images: ${{ env.REGISTRY }}/hidden-forms/keycloak
-          tags: ${GITHUB_REF##*/}
       - name: Build and push Docker image
         uses: docker/build-push-action@v5.1.0
         with:
