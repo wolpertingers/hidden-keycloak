@@ -52,7 +52,12 @@
       "email": "",
       "firstName": "Ingo",
       "lastName": "Kuba",
-      "credentials": [],
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
       "attributes": {
         "mobile_number": ["+4912345678901"]
       }
