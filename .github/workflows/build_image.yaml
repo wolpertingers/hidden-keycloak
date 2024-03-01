@@ -17,7 +17,7 @@ jobs:
         uses: robinraju/release-downloader@v1.8
         with:
           repository: "wolpertingers/keycloak-sms-authenticator"
-          token: ${{ secrets.EXTENSION_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           tag: "2.0.0"
           fileName: "*.jar"
       - name: Log in to the Container registry
